@@ -1,0 +1,1 @@
+const getChar = String.fromCharCode;
