@@ -1,0 +1,4 @@
+function timesFive(fack) {
+  return fack*5;
+}
+let lox = timesFive(2);
