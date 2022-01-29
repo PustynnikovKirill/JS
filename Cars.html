@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Гонки! </title> 
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script>
+var Car = function (x,y) {
+	this.x = x;
+	this.y = y;
+};
+var drawCar = function (car) {
+var carHtml = '<img src="https://bipbap.ru/wp-content/uploads/2017/09/1164905.jpg">';
+var carElement = $(carHtml);
+ carElement.css({
+ position: "absolute",
+ left: car.x,
+ top: car.y
+ });
+ $("body").append(carElement);
+ };
+var tesla = new Car(20, 20);
+var nissan = new Car(100, 200);
+drawCar(tesla);
+drawCar(nissan);
+</script>
+ </body>         
+</html>	
