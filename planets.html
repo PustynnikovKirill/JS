@@ -7,12 +7,14 @@
  .redtext { color: red; }
  </style>
  <script>
- function init() {
- var planet = document.getElementById("greenplanet");
- planet.innerHTML = "Red Alert: hit by phaser fire!";
- planet.setAttribute("class", "redtext");
- }
- window.onload = init;
+ function Duck(sound) {
+ this.sound = sound;
+ this.quack = function() {console.log(this.sound);}
+}
+var toy = new Duck("quack quack");
+toy.quack();
+console.log(typeof toy);
+console.log(toy instanceof Duck);
  </script>
 </head>
 <body>
